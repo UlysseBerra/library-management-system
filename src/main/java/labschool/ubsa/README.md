@@ -1,0 +1,45 @@
+- Library Management System
+  - constraints
+    - list of books
+      - title
+      - authors
+      - genre
+      - year
+      - ISBN/DOI
+    - add book
+    - remove book
+    - edit book
+    - borrow book
+    - return book
+  - exigences
+    - class Book
+      - fields
+        - title: String
+        - author: ArrayList<String>
+        - genre: String
+        - year: int
+        - ISBN: int
+        - available: boolean
+        - borrower: String
+    - class Library
+      - methods
+        - addBook
+          - adds a book
+        - removeBook
+          - removes a book
+        - borrowBook
+          - sets book.available to false
+        - returnBook
+          - sets book.available to true
+        - getBooks
+          - returns books based on input (title, author, ISBN, etc.)
+      - graphics
+        - Swing
+        - access Library methods
+        - access setters/getters from Book
+        - see available books
+        - see borrowed books
+          - see person who borrowed it
+      - database
+        - MongoDB
+        - list of Book objects
